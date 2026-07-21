@@ -1,0 +1,52 @@
+# Python cache and virtual env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Training artifacts and heavy data folders
+checkpoints*/
+checkpoint*/
+dataset*/
+Audio_Dataset*/
+audio_dominio*/
+input_audio/
+output_audio*/
+reconstructed_wav_*/
+generated_npy_for_griffinlim/
+visualization_output/
+pso_results/
+
+# Additional project-generated folders
+Cycle_V6/
+genre_classifier/
+genre_classifier_wav/
+Input/
+Output/
+TEST/
+
+# Binary/media outputs
+*.wav
+*.mp3
+*.flac
+*.npy
+*.npz
+*.tiff
+*.tif
+*.png
+*.jpg
+*.jpeg
