@@ -40,10 +40,40 @@ Per valutare in modo oggettivo l'efficacia del trasferimento di stile, il proget
 * **Inference/Test:** Suddivide i file convertiti in segmenti temporali e restituisce uno score aggregato (media e mediana delle probabilità) tramite una classificazione softmax a 2 logit, determinando a quale dominio appartiene il file audio finale.
 
 ---
+## Configurazione dell'Ambiente Virtuale (Conda)
+
+Per facilitare l'esecuzione degli script e garantire la compatibilità di tutte le librerie, la repo include il file `environment.yml`, che permette di ricreare esattamente l'ambiente virtuale Conda utilizzato durante lo sviluppo.
+
+Segui questi passaggi per configurare l'ambiente:
+
+1. **Clona il repository:**
+   Scarica il progetto in locale tramite Git e accedi alla cartella.
+   ```bash
+   git clone https://github.com/NikyJinx/Tesi_Cyclegan.git
+   cd Tesi_Cyclegan
+   ```
+
+2. **Modifica il percorso nel file environment:**
+   Apri il file `environment.yml` con un editor di testo. Vai all'ultima riga del file che inizia con `prefix:` e modificala inserendo il percorso di installazione di Anaconda del tuo computer. In alternativa puoi eliminare completamente l'intera riga per lasciare che Conda installi l'ambiente nel suo percorso predefinito.
+
+3. **Crea l'ambiente da file:**
+   Usa il comando Conda per leggere il file YAML e installare tutte le dipendenze necessarie.
+   ```bash
+   conda env create -f environment.yml
+   ```
+
+4. **Attiva l'ambiente:**
+   Una volta terminata l'installazione, attiva l'ambiente virtuale.
+   ```bash
+   conda activate bigvgan
+   ```
+   *(Nota bene: il nome dell'ambiente è bigvgan come specificato alla prima riga all'interno del file environment.yml)*
+
+
 
 ## Requisiti di Sistema
 
-* Python 3.8+
+* Python 3.8+ (Version used: 3.10.19)
 * PyTorch (raccomandato supporto CUDA)
 * Librosa e Soundfile (per l'elaborazione del segnale acustico)
 * NumPy
