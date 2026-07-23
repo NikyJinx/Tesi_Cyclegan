@@ -187,4 +187,4 @@ dependencies:
       - tqdm==4.67.3
       - typer==0.24.1
       - werkzeug==3.1.6
-prefix: C:\Users\vital\anaconda3\envs\bigvgan
+prefix: C:\Users\path
