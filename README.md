@@ -48,4 +48,3 @@ Per valutare in modo oggettivo l'efficacia del trasferimento di stile, il proget
 * Librosa e Soundfile (per l'elaborazione del segnale acustico)
 * NumPy
 * Tifffile (per l'esportazione degli spettrogrammi in alta qualità)
-* 
